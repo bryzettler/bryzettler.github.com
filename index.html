@@ -81,48 +81,48 @@
 		<a href="#springcoin" class="fbox"><img src="images/screens/springcoinhome.png" alt="SpringCoin SHome" /></a>
 	      </div>
 	      <h2 class="taeadad">SPRINGCOIN</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">An online debt managment program. Contracted Bry out with the task of implementing a photoshop design to HTML&nbsp;/&nbsp;CSS.</p><br> 
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> HTML&nbsp;/&nbsp;CSS, Slight jQuery&nbsp;/&nbsp;JavaScript.</span></p>
 	    </li>
 	    <li class="mid">
 	      <div class="project-holder">
 		<a href="#heykate" class="fbox"><img src="images/screens/heykatehome.png" alt="Kate SHome" /></a>
 	      </div>
 	      <h2 class="taeadad">HEYKATE! DESIGNS</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">Is a portfolio site for a Chicago designer. Bry was given the task of implementing the design.</p><br>
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> HTML&nbsp;/&nbsp;CSS, jQuery.</span></p>
 	    </li>
 	    <li>
 	      <div class="project-holder">
 		<a href="#robotco" class="fbox"><img src="images/screens/robotcohome.png" alt="Robot SHome" /></a>
 	      </div>
 	      <h2 class="taeadad">ROBOT COMPANY</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">A local BMX team. Approached Bry with the task of designing a website, implementing it, and integrating it with a CMS.</p><br>
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> Design, HTML&nbsp;/&nbsp;CSS, jQuery&nbsp;/&nbsp;JavaScript, LocommotiveCMS integration.</span></p>
 	    </li>
 	    <li>
 	      <div class="project-holder">
-		<span><img src="images/screens/cloudfujihome.png" alt="Cloudfuji Home"/></span>
+		<span class="img-holder"><img src="images/screens/cloudfujihome.png" alt="Cloudfuji Home"/></span>
 	      </div>
 	      <h2 class="taeadad">CLOUDFUJI</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">During the summer of 2010, Bry interned at CloudFuji. Throughout this time he worked on the front end in a Ruby on Rails environment.</p>
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> Design, HTML&nbsp;/&nbsp;CSS, Ruby on Rails.</span></p>
 	    </li>
 	    <li class="mid">
 	      <div class="project-holder">
 		<a href="#osr" class="fbox"><img src="images/screens/osrhome.png" alt="OSR SHome" /></a>
 	      </div>
 	      <h2 class="taeadad">OPEN SOURCE RAILS</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">A website showcasing Ruby on Rails applications. Bry implemented the design while interning at CloudFuji.</p>
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> HTML&nbsp;/&nbsp;CSS, jQuery&nbsp;/&nbsp;JavaScript, Ruby on Rails.</span></p>
 	    </li>
 	    <li>
 	      <div class="project-holder">
 		<a href="#ffcrm" class="fbox"><img src="images/screens/fatfreecrmhome.png" alt="FFCRM SHome" /></a>
 	      </div>
 	      <h2 class="taeadad">FATFREE CRM</h2>
-	      <p class="t6a6a6a">Bry Zettler is the web developer you’ve been looking for. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam dapibus consectetur. 
-</p>
+	      <p class="t6a6a6a">An open source CRM designed to be highly customizable. Bry implemented the design while interning at CloudFuji.</p>
+	      <p class="t6a6a6a"><span class="role"><span class="t037587">Role:</span> HTML&nbsp;/&nbsp;CSS, jQuery.</span></p>
 	    </li>
 	  </ul>
 	  <div class="footer">
@@ -274,6 +274,16 @@
 	 $(".quotes-holder").cycle({
 	    timeout: 7500,
             fx: 'fade',
+         });
+
+	 var maxHeight = -1;
+
+         $(".work-list li").each(function() {
+            maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+         });
+
+         $(".work-list li").each(function() {
+            $(this).height(maxHeight);
          });
 
       });

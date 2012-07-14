@@ -188,8 +188,7 @@ h2 {
 }
 #port {
     background: #fff;
-    height: 1184px;
-    padding: 125px 37px 0 37px;
+    padding: 125px 37px 60px 37px;
     position: relative;
 }
 #contact-holder {
@@ -266,13 +265,18 @@ h2 {
 .work-list li {
     border-bottom: 1px solid #d9d9d9;
     float: left;
-    height: 384px;
-    margin: 46px 0 0 0;
+    margin: 46px 0 30px 0;
+    padding: 0 0 0 0;
     text-align: left;
     width: 286px;
+    position: relative;
 }
 .work-list li h2 {
     padding: 20px 0 0 0;
+}
+.work-list li .role {
+    position: absolute;
+    bottom: 5px;
 }
 .work-list li.mid {
     margin: 46px 43px 0 45px;
@@ -285,7 +289,7 @@ h2 {
     text-align: left;
 }
 .work-list li a ,
-.work-list span {
+.work-list span.img-holder {
     border: 1px solid #d9d9d9;
     display: block;
     height: 252px;
@@ -297,7 +301,7 @@ h2 {
     width: 256px;
 }
 .work-list li p {
-    margin: 0 0 30px 0;
+    padding: 0 0 10px 0;
 }
 .hidden {
     display: none;
