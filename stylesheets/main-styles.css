@@ -1,0 +1,413 @@
+* {
+    margin:0;
+    padding:0;
+} 
+/* apply a natural box layout model to all elements */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    *behavior: url(scripts/boxsizing.htc);    
+}
+/* clearfix */
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom: 1;
+}
+html, 
+body {
+    height: 100%;
+}
+body {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background: #3e3d3d;
+}
+a {
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+#wrap {
+    min-height: 4300px;
+    margin: 0 auto;
+    width: 1020px;
+}
+/* Opera Fix */
+body:before {
+    content: "";
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+/* Main Styles */
+/* Text colors t followed by hex */
+.taeadad {
+    color: #aeadad !important;
+}
+.t6a6a6a {
+    color: #6a6a6a !important;
+}
+.t037587 {
+    color: #037587 !important;
+}
+/* end Text colors */
+h1,
+.heading {
+    background: white;
+    display: inline-block;
+    font: 60px 'UniversLTStd49LightUltraCnRg',arial,sans-serif;
+    line-height: 60px;
+    padding: 0 4px 0 0;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 900;
+}
+h2 {
+    font: 26px 'UniversLTStd49LightUltraCnRg',arial,sans-serif;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#nav-bar {
+    background: #292828;
+    height: 61px;
+    padding: 23px 20px 0 0;
+    position: fixed;
+    list-style: none;
+    text-align: right !important;
+    width: 1020px;
+    z-index: 1000;
+}
+#nav-bar li a.logo {
+    margin: -5px 0 0 0;
+}
+#nav-bar li a {
+    float: left;
+    font: 11px 'BebasRegular',arial,sans-serif;
+    margin: 0 10px 0 0;
+}
+#nav-bar li a:hover {
+    color: #037587;
+}
+#header {
+    background: #292828 url("../images/header-bg.png") bottom right no-repeat;
+    height: 260px;
+    position:relative;
+}
+#header .largename {
+    bottom: 0;
+    color: #fff;
+    font: 74px 'BebasRegular',arial,sans-serif;
+    left: 37px;
+    line-height: 76px;
+    position: absolute;
+    text-transform: uppercase;
+}
+#header .quote {
+    bottom: 146px;
+    color: white;
+    font: 14px 'UniversLTStd45Light',arial,sans-serif;
+    right: 90px;
+    line-height: normal;
+    position: absolute;
+    text-transform: uppercase;
+}
+#about-holder {
+    border-radius:5px;
+    -webkit-box-shadow: 0px 4px 7px 2px #2b2b2b;
+    box-shadow: 0px 4px 7px 2px #2b2b2b;
+    position: relative;
+    behavior: url(scripts/PIE.htc);    
+}
+#about  {
+    background: #fff;
+    height: 436px;      
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+}
+.about-list,
+.work-list {
+    list-style: none;
+    display: inline-block;
+}
+.about-list li {
+    background: url("../images/about-li-bg.png") top right no-repeat;
+    border: 1px solid #d9d9d9;
+    float: left;
+    height: 300px;
+    padding: 19px;
+    position: relative;
+    width: 283px;
+    text-align: left;
+}
+.about-list li h2 {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 0 0 0;
+}
+.about-list li p,
+.work-list li p {
+    font: 11px 'UniversLTStd45Light',arial,sans-serif;
+    margin: 10px 0 0 0;
+}
+.about-list li p {
+    border-bottom: 1px solid #d9d9d9;
+    padding-right: 20px;
+    height: 208px;
+}
+.about-list li.mid {
+    margin: 0 45px 0 45px;
+}
+#port-holder {
+    -webkit-box-shadow: 0px 0px 7px 2px #2b2b2b;
+    box-shadow: 0px 0px 7px 2px #2b2b2b;
+    border-radius: 5px;
+    position: relative;
+    behavior: url(scripts/PIE.htc);    
+}
+#port {
+    background: #fff;
+    height: 1184px;
+    padding: 125px 37px 0 37px;
+    position: relative;
+}
+#contact-holder {
+    -webkit-box-shadow: 0px 0px 7px 2px #2b2b2b;
+    box-shadow: 0px 0px 7px 2px #2b2b2b;
+    border-radius: 5px;
+    position: relative;
+    behavior: url(scripts/PIE.htc);    
+}
+#contact {
+    background: #fff;
+    height: 484px;
+    padding: 125px 37px 0 37px;
+    position: relative;
+}
+#contact .footer {
+    font: 11px 'BebasRegular',arial,sans-serif;
+    height: 44px;
+    text-align: center;
+}
+#contact .footer span {
+    margin: 0 0 0 13px;
+    position: relative;
+    top: -7px;
+}
+#contact .footer .teal-circle {
+    margin:0 5px -5px 5px;
+}
+.footer {
+    background: #292828;
+    bottom: 0;
+    left: 0;
+    height: 26px;
+    position: absolute;
+    width: 1020px;
+}
+.footer img {
+    display: block;
+    height: 41px;
+    margin:-17px auto 0 auto;
+    width: 41px;
+}
+.footer a {
+    top: -10px;
+    left: 496px;
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    display: block;
+}
+.teal-circle {
+    background: #037587;
+    border-radius: 50%;
+    display:inline-block;
+    height: 6px; 
+    width: 6px;
+    *margin-top: 1px !important;
+    margin: 5px 5px 0 -5px;
+    position: relative;
+    behavior: url(scripts/PIE.htc);    
+}
+.heading-holder {
+    display: block;
+    overflow: hidden;
+}
+.heading-stripe {
+    background: #292828;
+    bottom: 30px;
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    width: 100%;
+}
+.work-list li {
+    border-bottom: 1px solid #d9d9d9;
+    float: left;
+    height: 384px;
+    margin: 46px 0 0 0;
+    text-align: left;
+    width: 286px;
+}
+.work-list li h2 {
+    padding: 20px 0 0 0;
+}
+.work-list li.mid {
+    margin: 46px 43px 0 45px;
+}
+.project-holder {
+    border: 1px solid #d9d9d9;
+    height: 280px;
+    padding: 14px;
+    width: 286px;
+    text-align: left;
+}
+.work-list li a ,
+.work-list span {
+    border: 1px solid #d9d9d9;
+    display: block;
+    height: 252px;
+    overflow: hidden;
+    width: 256px;
+}
+.work-list li a img ,
+.work-list span img {
+    width: 256px;
+}
+.work-list li p {
+    margin: 0 0 30px 0;
+}
+.hidden {
+    display: none;
+    visibility: visible;
+}
+#contactform-holder {
+    border-left: 1px solid #D9D9D9;
+    color: #A4A7AD;
+    display:block;
+    font: 10px 'UniversLTStd45Light',arial,sans-serif;
+    margin: 0 0 0 40px;
+    padding:0 0 20px 40px;
+}
+.contactform {
+    display:block;
+    margin:0 auto;
+    position:relative;
+    text-align:center;
+}
+.contactform label {
+    display:inline-block;
+    text-align:left;
+    text-transform:uppercase;
+    width:50px;
+}
+.contactform input {
+    border:1px solid #D9D9D9;
+    height:24px;
+    margin:0 0 24px 0;
+}
+.contactform input.long {
+    width:393px;
+}
+.contactform input.phone {
+    width:121px;
+}
+.contactformbtn {
+    border:none;
+    background: none;
+    cursor:pointer;
+    display:inline-block;
+    height:18px;
+    padding:0 0 0 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contactblurb {
+    font: 11px 'UniversLTStd45Light',arial,sans-serif;
+    padding: 0 !important;
+    width: 220px;
+}
+#about .social-holder {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+#contact .social-holder {
+    position: absolute;
+    left: 37px;
+    bottom: 96px;
+}
+.linkedin,
+.facebook,
+.twitter {
+    background: url("../images/socialsprites.png") no-repeat;
+    display: block;
+    height: 18px;
+    width: 18px;
+}
+.linkedin {
+    background-position: 0 0;
+}
+.facebook {
+    margin: 0 10px 0 10px;
+    background-position: -18px 0;
+}
+.twitter {
+    background-position: -36px 0;
+}
+.linkedin:hover {
+    background-position: 0 -18px;
+}
+.facebook:hover {
+    background-position: -18px -18px;
+}
+.twitter:hover {
+    background-position: -36px -18px;
+}
+.gv_panel:hover {
+    overflow-y: scroll !important;
+}
+.gv_panel img {
+    position: static !important;
+}
+.planeright,
+.planeleft {
+    display: block;
+    height: 427px;
+    width: 255px;
+}
+.planeright {
+    background: url("../images/planeright.png") no-repeat;
+    margin: 0 0 0 364px;
+}
+.planeleft {
+    background: url("../images/planeleft.png") no-repeat;
+    margin: 0 0 0 404px;
+}
+.planesmall {
+    display: block;
+    height: 487px;
+    margin: 0 auto;
+    width: 948px;
+    background: url("../images/planesmall.png") no-repeat;
+}
+
