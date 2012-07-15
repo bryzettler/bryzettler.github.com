@@ -120,17 +120,19 @@ h2 {
     text-transform: uppercase;
 }
 #header .quotes-holder {
+    position: relative;
+    width: auto: !important;
     top: 80px;
-    right: -750px;
 }
 #header .quote {
-    right: 0 !important;
+    right: 90 !important;
     left: auto !important;
     color: white;
     font: 14px 'UniversLTStd45Light',arial,sans-serif;
     line-height: normal;
     position: absolute;
     text-transform: uppercase;
+    width: auto !important;
 }
 #about-holder {
     border-radius:5px;
