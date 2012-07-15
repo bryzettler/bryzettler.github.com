@@ -170,7 +170,7 @@ h2 {
 }
 .about-list li p,
 .work-list li p {
-    font: 11px 'UniversLTStd45Light',arial,sans-serif;
+    font: 12px 'UniversLTStd45Light',arial,sans-serif;
     margin: 10px 0 0 0;
 }
 .about-list li p {
@@ -352,7 +352,7 @@ h2 {
     right: 0;
 }
 .contactblurb {
-    font: 11px 'UniversLTStd45Light',arial,sans-serif;
+    font: 12px 'UniversLTStd45Light',arial,sans-serif;
     padding: 0 !important;
     width: 220px;
 }
