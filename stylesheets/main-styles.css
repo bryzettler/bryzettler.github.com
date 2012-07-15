@@ -121,11 +121,11 @@ h2 {
 }
 #header .quotes-holder {
     position: relative;
-    width: auto: !important;
+    width: auto !important;
     top: 80px;
 }
 #header .quote {
-    right: 90 !important;
+    right: 90px !important;
     left: auto !important;
     color: white;
     font: 14px 'UniversLTStd45Light',arial,sans-serif;
