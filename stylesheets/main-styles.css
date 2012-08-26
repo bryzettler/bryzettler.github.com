@@ -111,11 +111,13 @@ h2 {
     position:relative;
 }
 #header .largename {
-    bottom: 0;
+    bottom: -12px;
+/*    bottom: 0; */
     color: #fff;
     font: 74px 'BebasRegular',arial,sans-serif;
     left: 37px;
-    line-height: 76px;
+    line-height: normal;
+/*    line-height: 76px; */
     position: absolute;
     text-transform: uppercase;
 }
