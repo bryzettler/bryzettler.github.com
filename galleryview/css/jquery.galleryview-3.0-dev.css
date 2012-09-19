@@ -11,7 +11,7 @@
 /* IMPORTANT - Change '#myGallery' to the ID of your gallery list to prevent a flash of unstyled content */
 #myGallery { display: none; }
 
-.gv_galleryWrap { position: relative; background: #292828; font-size: 10pt; box-sizing: content-box;}
+.gv_galleryWrap { position: relative; background: #292828; padding: 8px !important; font-size: 10pt; box-sizing: content-box;}
 
 /* GALLERY DIV */
 .gv_gallery { overflow: hidden; position: relative;}
