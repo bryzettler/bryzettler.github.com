@@ -256,7 +256,7 @@ h2 {
     display: block;
     height: 44px;    
     margin-bottom: 40px;
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 .heading-stripe {
