@@ -259,6 +259,9 @@ h2 {
     position: relative;
     overflow: hidden;
 }
+.heading-holder img {
+    padding-right: 4px;
+}
 .heading-stripe {
     background: #292828;
     bottom: 0px;
