@@ -254,6 +254,8 @@ h2 {
 }
 .heading-holder {
     display: block;
+    height: 44px;    
+    margin-bottom: 40px;
     overflow: hidden;
 }
 .heading-stripe {
