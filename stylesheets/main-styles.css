@@ -94,7 +94,7 @@ h2 {
     width: 1020px;
     z-index: 1000;
 }
-#nav-bar li .teal-circle {
+#nav-bar li.teal-circle {
     top: 28px;
     right: 100px;
     background: #037587;
