@@ -94,6 +94,18 @@ h2 {
     width: 1020px;
     z-index: 1000;
 }
+#nav-bar li .teal-circle {
+    top: 28px;
+    right: 100px;
+    background: #037587;
+    border-radius: 50%;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    margin: 0 0 0 0;
+    position: absolute;
+    behavior: url(scripts/PIE.htc);
+}
 #nav-bar li a.logo {
     margin: -5px 0 0 0;
 }
