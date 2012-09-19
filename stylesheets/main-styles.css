@@ -256,14 +256,15 @@ h2 {
     display: block;
     height: 44px;    
     margin-bottom: 40px;
+    position: absolute;
     overflow: hidden;
 }
 .heading-stripe {
     background: #292828;
-    bottom: 30px;
+    bottom: 0px;
     display: inline-block;
     height: 4px;
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 .work-list li {
