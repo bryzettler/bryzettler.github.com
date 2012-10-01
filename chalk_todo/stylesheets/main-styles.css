@@ -30,7 +30,7 @@ body {
 body {
     width: 100%;
     margin: 0 auto 0 auto;
-    background: #000 url("../images/bg_background.png");
+/*    background: #000 url("../images/bg_background.png");*/
 }
 #wrap {
     min-height: 2958px;
@@ -50,7 +50,7 @@ body:before {
 .fl {
     float: left;
 }
-#chalk_board {
+/*#chalk_board {
     background: url("../images/bg_chalkboard.png") no-repeat;
     color: #dadada;
     display: block;
@@ -68,21 +68,13 @@ body:before {
     margin: 0 16px 0 40px;
     padding:;
     width: 656px;
-}
-#duedate_section {
-    display: block;
-    float: left;
-    height: 460px;
-    text-align:;
-    padding:;
-    width: 280px;
-}
+}*/
 h1 {
     font: 70px 'wherestarsshinethebrightest', serif;
     text-transform: uppercase;
     font-weight: normal;
 }
-.letterpress {
+/*.letterpress {
     text-shadow: 0px 1px 1px #603311;
     color: #000; 
     opacity: 0.7; 
@@ -101,7 +93,7 @@ h1 {
     bottom: 76px;
     right: 2px;
     width: 94px;
-}
+}*/
 .action {
     font: 50px 'wherestarsshinethebrightest', serif;
     text-transform: uppercase;
@@ -118,7 +110,7 @@ h1 {
 }
 #tasks li {
     padding: 0 0 14px 0;
-    background: url("../images/bg_chalkline.png") no-repeat bottom right;
+/*    background: url("../images/bg_chalkline.png") no-repeat bottom right;*/
 }
 #chalk_board input[type="text"] {
     background: transparent;
