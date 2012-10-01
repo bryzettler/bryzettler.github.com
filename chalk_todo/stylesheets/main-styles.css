@@ -59,16 +59,13 @@ body:before {
     padding: 88px 100px 90px 100px;
     width: 1200px;
     position: relative;
-}
+}*/
 #task_section {
     display: block;
-    float: left;
     height: 460px;
-    text-align:;
-    margin: 0 16px 0 40px;
-    padding:;
+    margin: 0 auto;
     width: 656px;
-}*/
+}
 h1 {
     font: 70px 'wherestarsshinethebrightest', serif;
     text-transform: uppercase;
