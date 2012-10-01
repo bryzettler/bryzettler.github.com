@@ -9,23 +9,20 @@
     <script src="javascript/chalktd.js"></script>
   </head>
   <body>
-    <div id="chalk_board">
+    <div>
       <!--      <p class="title letterpress">Chalk ToDo</p> -->
-      <div id="side_bar">
-	<a href="#" class="action letterpress">EDIT</a>
-      </div>
       <div id="task_section">
-	<h1>Tasks</h1>
-	<ul id="tasks">
-	  <li>
-	    <form id="todo-form">
-	      <input id="todo" type="text" lang="en-US" value="+ Add a task" autocomplete="off" spellcheck="false" onkeypress="return addItem(event)" onblur="if(this.value == '') {this.value = '+ Add a task';}" onfocus="if(this.value == '+ Add a task') {this.value = '';}" /> 
-	    </form>
-	  </li>
-	</ol>
+      	<h1>Tasks</h1>
+        <ul id="tasks">
+          <li>
+      	    <form id="todo-form">
+      	      <input id="todo" type="text" lang="en-US" value="+ Add a task" autocomplete="off" spellcheck="false" onkeypress="return addItem(event)" onblur="if(this.value == '') {this.value = '+ Add a task';}" onfocus="if(this.value == '+ Add a task') {this.value = '';}" /> 
+      	    </form>
+      	  </li>
+      	</ul>
       </div>
       <div id="duedate_section">
-	<h1>Due Dates</h1>
+    	 <h1>Due Dates</h1>
       </div>
     </div>
     <script type="text/javascript">
