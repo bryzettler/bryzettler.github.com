@@ -1,9 +1,9 @@
 //Define vars
 var i = 0;
 
-function toggleVis(id){
+function toggleVis(id) {
 	var e = document.getElementById(id);
-	if(e.style.display == 'block'){
+	if(e.style.display == 'block') {
 		e.style.display = 'none';
 	}
 	else {

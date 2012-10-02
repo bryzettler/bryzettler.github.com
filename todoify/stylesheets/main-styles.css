@@ -87,7 +87,7 @@ body:before {
     font: 12px 'Helvetica, Arial,sans-serif' !important;
 }
 #todo-form input[type="text"] {
-    background: url("../images/bginput.png") no-repeat 0 0;
+    background: url("../images/bginput.png") no-repeat 0 -35px;
     border: none;
     border-radius: 4px;
     color: #333;
@@ -97,9 +97,6 @@ body:before {
     padding: 0 0 0 33px;
     font-size: 12px;
     font-weight: bold !important;
-}
-#todo-form input[type="text"]:focus {
-    background: url("../images/bginput.png") no-repeat 0 -35px;
 }
 .addtaskbtn {
     display: block;
