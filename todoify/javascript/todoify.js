@@ -16,9 +16,9 @@ function addItem(e) {
 	var listItem = document.getElementById('todo').value,
 		listed = '<li id="item' + i + '"><span>' + listItem + '</span></li>';
 	document.getElementById('tasks').innerHTML += listed;
+	document.getElementById('taskadder').style.display = 'none';
 	return false;
     }
-    e.style.display = 'none';
 }
 
 
