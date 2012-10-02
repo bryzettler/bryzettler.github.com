@@ -101,5 +101,15 @@ body:before {
 #todo-form input[type="text"]:focus {
     background: url("../images/bginput.png") no-repeat 0 -35px;
 }
+.addtaskbtn {
+    display: block;
+    width: 71px;
+    height: 61px;
+    margin: 18px 20px 0 0;
+    background: url("../images/addtaskbtn.png") no-repeat;
+}
+#taskadder {
+    display: none;
+}
 
 

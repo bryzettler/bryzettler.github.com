@@ -12,11 +12,12 @@
     <!--      <p class="title letterpress">Chalk ToDo</p> -->
     <div id="task_section">
       <div id="addbar">
+          <a href="#" class="addtaskbtn fr" onclick="toggleVis('taskadder');"></a>
       </div>
       <ul id="tasks">
-        <li>
+        <li id="taskadder">
           <form id="todo-form">
-            <input id="todo" type="text" lang="en-US" value="" autocomplete="off" spellcheck="false" onkeypress="return addItem(event)" onblur="if(this.value == '') {this.value = '';}" onfocus="if(this.value == '') {this.value = '';}" /> 
+            <input id="todo" type="text" lang="en-US" value="" autocomplete="off" spellcheck="false" onkeypress="return addItem(event),toggleVis('taskadder')" onblur="if(this.value == '') {this.value = '';}" onfocus="if(this.value == '') {this.value = '';}" /> 
           </form>
         </li>
     	</ul>
