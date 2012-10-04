@@ -17,7 +17,8 @@
       <ul id="tasks">
         <li id="taskadder">
           <form id="todo-form">
-            <input id="todo" type="text" lang="en-US" value="Add a new task" autocomplete="off" spellcheck="false" onkeypress="return addItem(event)" onblur="if(this.value == '') {this.value = 'Add a new task';}" onfocus="if(this.value == 'Add a new task') {this.value = '';}" /> 
+            <input id="todo" type="text" lang="en-US" value="Add a new task" autocomplete="off" spellcheck="false" onblur="if(this.value == '') {this.value = 'Add a new task';}" onfocus="if(this.value == 'Add a new task') {this.value = '';}" /> 
+            <input id="submit" type="submit" value="" onclick="addItem();"/>
           </form>
         </li>
     	</ul>

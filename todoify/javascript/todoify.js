@@ -10,15 +10,13 @@ function toggleVis(id) {
 		e.style.display = 'block';
 	}
 }
-function addItem(e) {
-    if (e.keyCode == 13) {
+function addItem() {
 	i++;
 	var listItem = document.getElementById('todo').value,
-		listed = '<li id="item' + i + '"><span>' + listItem + '</span></li>';
+		listed = '<li id="item' + i + '"><span class="priority defualt"></span><a href="#" class="closex"></a><span>' + listItem + '</span></li>';
 	document.getElementById('tasks').innerHTML += listed;
 	document.getElementById('taskadder').style.display = 'none';
 	return false;
-    }
 }
 
 
