@@ -57,7 +57,7 @@ body:before {
     -moz-box-shadow: 0px 4px 12px #1c1c1c;
     box-shadow: 0px 4px 12px #1c1c1c;
 }
-#addbar {
+#topbar {
     background: #252525;
     border-bottom: 1px solid #a7a7a7;
     border-radius: 5px 5px 0px 0px;
@@ -116,9 +116,9 @@ input[type="submit"] {
     margin: 18px 20px 0 0;
     background: url("../images/addtaskbtn.png") no-repeat;
 }
-#taskadder {
-    display: none;
-}
+/*#taskadder {
+    visibility: hidden;
+}*/
 .closex {
     display:block;
     width: 12px;
