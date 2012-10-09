@@ -10,12 +10,12 @@ var i = 0;
 		e.style.visibility = 'visible';
 	}
 }*/
-function addItem() {
+function addItem(e) {
 	i++;
 	var listItem = document.getElementById('todo').value,
 		listed = '<li id="item' + i + '"><span class="priority defualt"></span><a href="#" class="closex" onclick="removeItem(\'item'+ i + '\')"></a><span>' + listItem + '</span></li>';
-		document.getElementById('tasks').innerHTML += listed;
-		return false;
+	document.getElementById('tasks').innerHTML += listed;
+	e.preventDefault();
 }
 function removeItem(item) {
 	var node = document.getElementById(item);
