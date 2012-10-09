@@ -15,6 +15,7 @@ function addItem() {
 	var listItem = document.getElementById('todo').value,
 		listed = '<li id="item' + i + '"><span class="priority defualt"></span><a href="#" class="closex" onclick="removeItem(\'item'+ i + '\')"></a><span>' + listItem + '</span></li>';
 	document.getElementById('tasks').innerHTML += listed;
+	return false;
 }
 function removeItem(item) {
 	var node = document.getElementById(item);
