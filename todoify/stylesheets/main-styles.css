@@ -85,9 +85,6 @@ body:before {
     margin-top: 6px;
     text-align: center;
     font: 12px 'Helvetica, Arial,sans-serif' !important;
-    min-height: 84px;
-    padding: 19px 20px 19px 30px;
-    border-bottom: 1px solid #a7a7a7;
 }
 input[type="text"] {
     background: url("../images/bginput.png") no-repeat 0 -35px;
