@@ -25,7 +25,9 @@ function addItem(e) {
 	var priority = getPriority(),
 		listItem = document.getElementById('todo').value,
 		listed = '<li id="item' + i + '"><span class="priority '+ priority + '"></span><a href="#" class="closex" onclick="removeItem(\'item'+ i + '\')"></a><span>' + listItem + '</span></li>';
-	document.getElementById('tasks').innerHTML += listed;
+	if(listItem !== "" && listItem !== "Add a new task"){
+		document.getElementById('tasks').innerHTML += listed;
+	}
 	e.preventDefault();
 }
 
