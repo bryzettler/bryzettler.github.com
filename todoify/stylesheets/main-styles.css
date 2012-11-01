@@ -153,8 +153,5 @@ input[type="submit"] {
     background: #E7B353;
 }
 .priority.low {
-    background: #00AA6B;
-}
-.priority.defualt {
     background: #544f4f;
 }
