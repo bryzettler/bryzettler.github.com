@@ -71,9 +71,13 @@ body:before {
     font: 50px 'wherestarsshinethebrightest', serif;
     list-style: none;
     padding: 0;
-    height: 450px;
+    height: 540px;
     overflow-x: hidden;
     position: relative;
+}
+#tasks li:first-child {
+    min-height: auto;
+    padding: 10px 20px 10px 20px;
 }
 #tasks li {
     min-height: 90px;
@@ -82,7 +86,7 @@ body:before {
     position: relative;
 }
 #todo-form {
-    margin-top: 6px;
+    margin-top: 10px;
     text-align: center;
     font: 12px 'Helvetica, Arial,sans-serif' !important;
 }
@@ -128,6 +132,12 @@ input[type="submit"] {
 .closex:active {
     background: url("../images/bginput.png") no-repeat -70px -82px;
 }
+#priorityHolder {
+    margin: 10px auto 0 auto;
+}
+#priorityHolder span {
+    margin: 0 10px;
+}
 .priority {
     width: 12px;
     height: 100%;
@@ -135,6 +145,15 @@ input[type="submit"] {
     position: absolute;
     left: 0;
     top: 0;        
+}
+.priority.high {
+    background: #E06138;
+}
+.priority.medium {
+    background: #E7B353;
+}
+.priority.low {
+    background: #00AA6B;
 }
 .priority.defualt {
     background: #544f4f;
