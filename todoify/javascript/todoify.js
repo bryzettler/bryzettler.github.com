@@ -15,7 +15,7 @@ function getPriority(){
 		priority = "low";
 	}
 	else {
-		priority = "defualt";
+		priority = "low";
 	}
 	return priority;
 }
