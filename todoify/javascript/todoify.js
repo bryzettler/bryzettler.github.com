@@ -1,8 +1,7 @@
 //Define vars
-var i = 0;
 	
 function getPriority(){
-	var high = document.getElementById('high'),
+	var	high = document.getElementById('high'),
 		medium = document.getElementById('medium'),
 		low = document.getElementById('low');
 	if (high.checked){
@@ -20,14 +19,28 @@ function getPriority(){
 	return priority;
 }
 
+function sortItems(){
+	var tasks = document.querySelector('#tasks'),
+			items = document.querySelectorAll('#tasks > li');
+
+	for (var i = 0, arr = ['high', 'medium', 'low']; i < arr.length; i++) {
+			for (var j = 0; j < items.length; j++) {
+					if (~(" " + items[j].className + " ").indexOf(" " + arr[i] + " "))
+						tasks.appendChild(items[j]);
+			}
+	}
+}
+
 function addItem(e) {
+	var i = 0;
 	i++;
 	var priority = getPriority(),
 		listItem = document.getElementById('todo').value,
-		listed = '<li id="item' + i + '"><span class="priority '+ priority + '"></span><a href="#" class="closex" onclick="removeItem(\'item'+ i + '\')"></a><span>' + listItem + '</span></li>';
+		listed = '<li id="item' + i + '" class="'+ priority +'"><span class="priority '+ priority + '"></span><a href="#" class="closex" onclick="removeItem(\'item'+ i + '\')"></a><span>' + listItem + '</span></li>';
 	if(listItem !== "" && listItem !== "Add a new task"){
 		document.getElementById('tasks').innerHTML += listed;
 	}
+	sortItems();
 	e.preventDefault();
 }
 
