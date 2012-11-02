@@ -1,5 +1,6 @@
 //Define vars
-	
+var i = 0;
+
 function getPriority(){
 	var	high = document.getElementById('high'),
 		medium = document.getElementById('medium'),
@@ -32,7 +33,6 @@ function sortItems(){
 }
 
 function addItem(e) {
-	var i = 0;
 	i++;
 	var priority = getPriority(),
 		listItem = document.getElementById('todo').value,
