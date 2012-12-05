@@ -324,10 +324,6 @@ h2 {
     opacity:0.4;
     filter:alpha(opacity=40); /* For IE8 and earlier */
 }
-.work-list li a img ,
-.work-list span img {
-    width: 256px;
-}
 .work-list li p {
     padding: 0 0 10px 0;
 }
