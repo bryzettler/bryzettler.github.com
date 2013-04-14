@@ -443,4 +443,6 @@ h2 {
     width: 948px;
     background: url("../images/planesmall.png") no-repeat;
 }
-
+.lineout {
+    text-decoration: line-through;
+}
